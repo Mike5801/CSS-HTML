@@ -30,8 +30,7 @@ a, a:visited {
   justify-content: center;
   border-radius: 50%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  background: #FDC830; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F37335, #FDC830); /* Chrome 10-25, Safari 5.1-6 */
+  background: #FDC830; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
@@ -72,8 +71,7 @@ a, a:visited {
     flex-direction: column;
     flex: 1;
     max-width: 850px;
-    background: #FDC830; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F37335, #FDC830); /* Chrome 10-25, Safari 5.1-6 */
+    background: #FDC830; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: rgba(255, 255, 255, 0.8);
   }
@@ -145,6 +143,16 @@ a, a:visited {
 .input-container input:focus {
   outline-color: cornflowerblue;
 }
+.input-container input:not(:-moz-placeholder-shown) ~ label {
+  transform: translateY(-24px) translateX(-8px) scale(0.8);
+  background: white;
+  padding: 0 5px;
+}
+.input-container input:not(:-ms-input-placeholder) ~ label {
+  transform: translateY(-24px) translateX(-8px) scale(0.8);
+  background: white;
+  padding: 0 5px;
+}
 .input-container input:focus ~ label, .input-container input:not(:placeholder-shown) ~ label {
   transform: translateY(-24px) translateX(-8px) scale(0.8);
   background: white;
@@ -186,8 +194,7 @@ a, a:visited {
 button {
   position: relative;
   overflow: hidden;
-  background: #FDC830; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F37335, #FDC830); /* Chrome 10-25, Safari 5.1-6 */
+  background: #FDC830; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border: none;
   color: white;
@@ -209,6 +216,4 @@ button:hover svg {
 .bottom-line {
   margin: 20px;
   color: #808097;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
